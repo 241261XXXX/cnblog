@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/ie10-viewport-bug-workaround.css">
+    <link rel="stylesheet" href="/static/css/signin.css">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <form class="form-signin" method="post">
+        {% csrf_token %}
+        <h2 class="form-signin-heading">请输入git_1</h2>
+        <label for="inputUser" class="sr-only">用户名</label>
+        <input type="text" name='user' id="inputUser" class="form-control" placeholder="用户名" required="" autofocus="">
+        <label for="inputPassword" class="sr-only">111111111密码</label>
+        <input type="password" name='pwd' id="inputPassword" class="form-control" placeholder="密码" required="">
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="remember-me"> Remember me
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+</div>
+</body>
+</html>
