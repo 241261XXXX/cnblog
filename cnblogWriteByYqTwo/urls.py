@@ -37,5 +37,4 @@ urlpatterns = [
     re_path('(?P<username>\w+)/articles/(?P<article_id>\d+)$', views.articleDetail),
     re_path('(?P<username>\w+)/(?P<condition>category|tag|achrive)/(?P<params>.*)', views.homeSite),
     re_path('(?P<username>\w+)/$', views.homeSite),
-
 ]
